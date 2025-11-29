@@ -1,0 +1,86 @@
+/* style/style.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #444;
+}
+
+/* Toolbar */
+#toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#toolbar input,
+#toolbar select,
+#toolbar button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#toolbar button {
+  background: #0078d7;
+  color: #fff;
+  border: none;
+}
+
+#toolbar button:hover {
+  background: #005fa3;
+}
+
+/* Canvas */
+#editorCanvas {
+  border: 2px dashed #ccc;
+  background: #fff;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Template Gallery */
+#templateGallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.template-thumb {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.template-thumb:hover {
+  transform: scale(1.05);
+  border-color: #0078d7;
+}
